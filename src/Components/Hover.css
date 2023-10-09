@@ -1,0 +1,81 @@
+/* .img-hover-zoom {
+    
+    overflow: hidden; 
+  }
+  
+  /* [2] Transition property for smooth transformation of images */
+  /* .img-hover-zoom img {
+    transition: transform .5s ease;
+  } */
+  
+  /* [3] Finally, transforming the image when container gets hovered */
+  /* .img-hover-zoom:hover img {
+    transform: scale(1.1);
+  }
+  * {box-sizing: border-box} */
+
+/* Container needed to position the overlay. Adjust the width as needed */ 
+
+
+.container2{
+  position: relative;
+  width: 100%;
+  padding: 50px;
+  padding-left: 350px;
+  /* //max-width: 300px; */
+  
+}
+
+/* Make the image to responsive */
+.image2 {
+  display: block;
+   width: 500px;
+  height: 300px;
+  border-radius: 8px;
+  
+}
+
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute; 
+  bottom: 0px;
+  
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 500px;
+  transition: 1s ease;
+  opacity:0;
+  color: white;
+  font-size: 17px;
+  padding: 1px;
+  
+  text-align: center; 
+  
+  height: 0px;
+  
+  
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container2:hover .overlay {
+  opacity: 2;
+  visibility: visible;
+  
+  cursor: pointer;
+  bottom: 50px;
+  height: 300px;
+  background: rgba(142, 25, 25, 0.5);
+  
+  
+  
+}
+/* .container2:hover .image2{
+  transform: scale(1) rotate(360deg) ;
+  transition: 1s;
+
+} */
+.text{
+  padding-top: 100px;
+}
+  
